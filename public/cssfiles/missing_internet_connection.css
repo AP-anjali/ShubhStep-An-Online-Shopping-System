@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Nunito', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: none;
+}
+
+.image_container img{
+    width: 40vw;
+}
+
+.text_container{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.main_container{
+    display: flex;
+    padding: 0 10%;
+    gap: 5%;
+}
+
+.text_container h1{
+    color: #333333;
+    margin: 1% 0;
+    font-size: 2.5vw;
+}
+
+.other_info_container span{
+    color: #333333;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.other_info_container h3{
+    color: #454545;
+    margin: 1% 0;
+    font-size: 1.5vw;
+}
+
+.other_info_container{
+    text-align: center;
+}
+
+#refresh_btn{
+    outline: none;
+    background: #8789ff;
+    border: none;
+    padding: 0.5vw 1.8vw;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 700;
+    transition: 0.3s all ease;
+}
+#refresh_btn:hover{
+    background: #696cff;
+}
+
+@media only screen and (max-width: 980px) {
+    .main_container {
+      flex-direction: column;
+    }
+  
+    .text_container {
+      width: 100%;
+      margin-top: 20px; 
+    }
+
+      .text_container h1 {
+        font-size: 4.4vw;
+      }
+
+      .other_info_container span {
+        font-size: 3.8vw; 
+      }
+
+      .other_info_container h3 {
+        font-size: 3vw;
+      }
+
+      .image_container img {
+        width: 80vw; 
+    }
+
+    #refresh_btn {
+        padding: 0.8vw 2vw; 
+        font-size: 2.7vw;
+    }
+  }
